@@ -26,32 +26,34 @@ public class CarSpawn : MonoBehaviour
 
     int numberOfCars;
 
-    bool evenCar; // Determines if index of carPrefabs is an even number.
-
     // Start is called before the first frame update
     void Start()
     {
         numberOfCars = carPrefabs.Length; // Get number of car prefabs in array
+        InvokeRepeating("spawnCar", 2.0f, 5.0f);
     }
 
     // Update is called once per frame
     void Update()
     {
+        //Give the spawned car a velocity;
+        //carClone.transform.Translate(Vector3.forward * Time.deltaTime * speed);
+    }
+
+    public void spawnCar()
+    {
         int randomCar = Random.Range(0, numberOfCars - 1); // Randomly selects a car from prefab array.
+        int randomStartingPoint = Random.Range(1, 11);
+
+        Debug.Log("Index of car is: " + randomCar);
+        Debug.Log("Index of starting point is: " + randomStartingPoint);
 
         // Check if index of random car chosen is even
-        if (randomCar % 2 == 0)
-            evenCar = true;
-
-        // If randomCar = even, spawn the prefab at the westSpawnpoint, otherwise at eastSpawnPoint.
-        if (evenCar)
+        if (randomStartingPoint % 2 == 0)
             startingPoint = westSpawnPoint;
-        else 
+        else
             startingPoint = eastSpawnPoint;
 
         GameObject carClone = Instantiate(carPrefabs[randomCar], startingPoint);
-
-        //Give the spawned car a velocity;
-        carClone.transform.Translate(Vector3.forward * Time.deltaTime * speed);
     }
 }
