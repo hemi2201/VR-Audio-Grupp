@@ -5,11 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Cars
+  - Hands
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Hands
   - Water
   - UI
   - 
