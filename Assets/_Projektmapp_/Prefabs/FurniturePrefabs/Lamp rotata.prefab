@@ -2088,11 +2088,12 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 32219037779785e428da05cfad2f3f1f, type: 2}
-  - {fileID: 2100000, guid: c7a5713366fa0de499a63df4ff766981, type: 2}
+  - {fileID: 2100000, guid: 16a845de936cf3d4193867bdccb2bb81, type: 2}
+  - {fileID: 2100000, guid: b69f96e374ac2ae49b6fcab3035c1b1e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2113,6 +2114,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &3887664121051092840
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2225,6 +2227,7 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!1 &8509246009445884582
@@ -2241,7 +2244,7 @@ GameObject:
   - component: {fileID: 9043743760228460054}
   - component: {fileID: 7112558123522770366}
   m_Layer: 0
-  m_Name: Lamp (1)
+  m_Name: Lamp rotata
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3475,10 +3478,11 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 32219037779785e428da05cfad2f3f1f, type: 2}
+  - {fileID: 2100000, guid: 16a845de936cf3d4193867bdccb2bb81, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3499,6 +3503,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &9043743760228460054
 MeshFilter:
   m_ObjectHideFlags: 0
